@@ -25,4 +25,9 @@ public class HomeController  {
         return message;
 
     }
+
+    @GetMapping("/test1")
+    public Mono<String> test1(){
+        return Mono.just(" Hello World from TEst1");
+    }
 }
